@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "predeploy": "npm run build",
+    "deploy": "ghpages -d build"
   },
   "keywords": [
     "javascript"
@@ -16,6 +18,7 @@
     "@babel/core": "^7.15.8",
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^9.0.1",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.4.0",
     "webpack": "^5.59.1",
     "webpack-cli": "^4.9.1",
@@ -23,5 +26,6 @@
   },
   "dependencies": {
     "uuid": "^7.0.3"
-  }
+  },
+  "homepage": "https://AngelBLK.github.io/Rick-and-Morty-API"
 }

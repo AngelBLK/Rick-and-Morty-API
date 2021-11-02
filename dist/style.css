@@ -121,20 +121,26 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+
 @media screen and (max-width: 780px) {
-	.characters {
+	.Characters {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media screen and (max-width: 480px) {
-	.characters {
+	.Characters {
 		grid-template-columns: 1fr;
 	}
 
-	.characters-inner {
+	.Characters-inner {
 		grid-template-columns: 1fr;
 		grid-gap: 0;
 		grid-row-gap: 0;
 	}
+
+  .Character-item {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
