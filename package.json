@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "predeploy": "npm run build",
-    "deploy": "ghpages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "keywords": [
     "javascript"
